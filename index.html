@@ -1,0 +1,282 @@
+<html>
+
+<head>
+    <title> Mobile Net VS Google Lens</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="versus.png">
+</head>
+
+<body background="bg.jpg">
+    <center>
+        <h1> CASE STUDY </h1>
+        <img id="mn" src="mn.webp"> <img id="vs" src="versus.png"> <img id="gl" src="gl.png">
+        <hr>
+    </center>
+    <ol>
+        <div id="testimg_result1" class="col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b> Test Image-</b>
+                <img src="bed.jpg">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 output_gl">
+                Output at <b>GOOGLE LENS -</b>
+                <span> </span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12 output_mn">
+                Output at <b>MOBILE NET -</b>
+                <span> </span>
+            </h5>
+
+            <div class="mini-result col-xs-12">
+                <h4 style="font-family: 'Rubik 80s Fade', cursive; font-size: 20px;"> Result - </h4>
+                <h4> </h4> <br>
+            </div>
+        </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <br> <br> <br> <br> <br> <br>
+
+
+        <div id="testimg_result2" class="col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b> Test Image-</b>
+                <img style="width: 350px;" src="cap.jpeg">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 output_gl">
+                Output at <b>GOOGLE LENS -</b>
+                <span> </span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12 output_mn">
+                Output at <b>MOBILE NET -</b>
+                <span> </span>
+            </h5>
+
+            <div class="mini-result col-xs-12">
+                <h4 style="font-family: 'Rubik 80s Fade', cursive; font-size: 20px;"> Result - </h4>
+                <h4> </h4> <br>
+            </div>
+        </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <br> <br> <br> <br> <br> <br> <br> <br>
+
+
+        <div id="testimg_result3" class="col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b> Test Image-</b>
+                <img style="width: 420px;" src="dog.jpg">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 output_gl">
+                Output at <b>GOOGLE LENS -</b>
+                <span> </span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12 output_mn">
+                Output at <b>MOBILE NET -</b>
+                <span> </span>
+            </h5>
+
+            <div class="mini-result col-xs-12">
+                <h4 style="font-family: 'Rubik 80s Fade', cursive; font-size: 20px;"> Result - </h4>
+                <h4> </h4> <br>
+            </div>
+        </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <br> <br>
+
+
+        <div id="testimg_result4" class="col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b> Test Image-</b>
+                <img style="width: 400px;" src="macbook.jpg">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 output_gl">
+                Output at <b>GOOGLE LENS -</b>
+                <span> </span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12 output_mn">
+                Output at <b>MOBILE NET -</b>
+                <span> </span>
+            </h5>
+
+            <div class="mini-result col-xs-12">
+                <h4 style="font-family: 'Rubik 80s Fade', cursive; font-size: 20px;"> Result - </h4>
+                <h4> </h4> <br>
+            </div>
+        </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <br> <br> <br> <br> <br> <br> <br>
+
+
+        <div id="testimg_result5" class="col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b> Test Image-</b>
+                <img style="width: 350px;" src="ring.jpg">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 output_gl">
+                Output at <b>GOOGLE LENS -</b>
+                <span> </span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12 output_mn">
+                Output at <b>MOBILE NET -</b>
+                <span> </span>
+            </h5>
+
+            <div class="mini-result col-xs-12">
+                <h4 style="font-family: 'Rubik 80s Fade', cursive; font-size: 20px;"> Result - </h4>
+                <h4> </h4> <br>
+            </div>
+        </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <br> <br> <br> <br>
+
+
+        <div id="testimg_result6" class="col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b> Test Image-</b>
+                <img style="width: 430px; height: 300px;" src="shoes.jpg">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 output_gl">
+                Output at <b>GOOGLE LENS -</b>
+                <span> </span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12 output_mn">
+                Output at <b>MOBILE NET -</b>
+                <span> </span>
+            </h5>
+
+            <div class="mini-result col-xs-12">
+                <h4 style="font-family: 'Rubik 80s Fade', cursive; font-size: 20px;"> Result - </h4>
+                <h4> </h4> <br>
+            </div>
+        </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <br> <br>
+
+
+        <div id="testimg_result7" class="col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b> Test Image-</b>
+                <img style="width: 380px;" src="soap dispenser.webp">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 output_gl">
+                Output at <b>GOOGLE LENS -</b>
+                <span> </span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12 output_mn">
+                Output at <b>MOBILE NET -</b>
+                <span> </span>
+            </h5>
+
+            <div class="mini-result col-xs-12">
+                <h4 style="font-family: 'Rubik 80s Fade', cursive; font-size: 20px;"> Result - </h4>
+                <h4> </h4> <br>
+            </div>
+        </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <br> <br> <br> <br> <br> <br>
+
+
+        <div id="testimg_result8" class="col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b> Test Image-</b>
+                <img style="width: 380px;" src="sweatshirt.jpg">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 output_gl">
+                Output at <b>GOOGLE LENS -</b>
+                <span> </span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12 output_mn">
+                Output at <b>MOBILE NET -</b>
+                <span> </span>
+            </h5>
+
+            <div class="mini-result col-xs-12">
+                <h4 style="font-family: 'Rubik 80s Fade', cursive; font-size: 20px;"> Result - </h4>
+                <h4> </h4> <br>
+            </div>
+        </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        <br> <br> <br> <br> <br> <br>
+
+
+        <div id="testimg_result9" class="col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b> Test Image-</b>
+                <img style="width: 430px; height: 350px;" src="teddy.jpg">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 output_gl">
+                Output at <b>GOOGLE LENS -</b>
+                <span> </span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12 output_mn">
+                Output at <b>MOBILE NET -</b>
+                <span> </span>
+            </h5>
+
+            <div class="mini-result col-xs-12">
+                <h4 style="font-family: 'Rubik 80s Fade', cursive; font-size: 20px;"> Result - </h4>
+                <h4> </h4> <br>
+            </div>
+        </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    
+    
+        <div id="testimg_result10" class="col-xs-12">
+
+            <li class="col-sm-4 col-xs-12">
+                <b> Test Image-</b>
+                <img style="width: 430px; height: 350px;" src="unicorn bottle.jpg">
+            </li>
+
+            <h5 class="col-sm-4 col-xs-12 output_gl">
+                Output at <b>GOOGLE LENS -</b>
+                <span> </span>
+            </h5>
+
+            <h5 class="col-sm-4 col-xs-12 output_mn">
+                Output at <b>MOBILE NET -</b>
+                <span> </span>
+            </h5>
+
+            <div class="mini-result col-xs-12">
+                <h4 style="font-family: 'Rubik 80s Fade', cursive; font-size: 20px;"> Result - </h4>
+                <h4> </h4> <br>
+            </div>
+        </div> 
+    
+    </ol> <br> <br> <br>  <br> <br>
+
+
+</body>
